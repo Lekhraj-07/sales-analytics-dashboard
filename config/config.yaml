@@ -1,0 +1,56 @@
+app:
+  title: "Sales & Profitability Analytics"
+  page_icon: "📊"
+  layout: "wide"
+
+data:
+  rows: 6500
+  start_date: "2023-01-01"
+  end_date: "2025-12-31"
+  random_seed: 42
+  raw_csv_path: "data/raw_sales.csv"
+  db_path: "data/analytics.db"
+  table_name: "sales"
+
+regions:
+  - North America
+  - Europe
+  - Asia Pacific
+  - Latin America
+  - Middle East & Africa
+
+categories:
+  Electronics:
+    - Smartphone Pro
+    - Wireless Earbuds
+    - 4K Monitor
+    - Gaming Laptop
+    - Smartwatch
+  Home & Kitchen:
+    - Air Fryer
+    - Robot Vacuum
+    - Espresso Machine
+    - Stand Mixer
+  Apparel:
+    - Performance Hoodie
+    - Running Shoes
+    - Denim Jacket
+    - Wool Beanie
+  Sports & Outdoors:
+    - Yoga Mat
+    - Mountain Bike
+    - Camping Tent
+    - Trail Runner
+  Beauty & Health:
+    - Facial Serum
+    - Electric Toothbrush
+    - Vitamin Pack
+
+logging:
+  level: INFO
+  format: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+
+auth:
+  enabled: true
+  username: "admin"
+  password: "admin123"

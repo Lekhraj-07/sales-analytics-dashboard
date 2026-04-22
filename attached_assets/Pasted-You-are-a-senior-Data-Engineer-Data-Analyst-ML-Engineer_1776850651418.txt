@@ -1,0 +1,102 @@
+You are a senior Data Engineer + Data Analyst + ML Engineer.
+
+Your task is to design and build a production-grade Data Analytics Dashboard project suitable for a professional portfolio (LinkedIn/GitHub).
+
+## OBJECTIVE
+Build an end-to-end analytics system with:
+- Data ingestion
+- Data processing
+- Data storage
+- Interactive dashboard
+- Insight generation
+
+## TECH STACK (MANDATORY)
+- Python 3.10+
+- pandas, numpy
+- plotly (NOT matplotlib for final UI)
+- streamlit (for dashboard)
+- optional: sqlite3 or duckdb for storage
+
+## DATA REQUIREMENTS
+- Create or fetch a realistic dataset (minimum 5000 rows)
+- Domain: Sales / Finance / E-commerce
+- Fields must include:
+  Date, Customer_ID, Product, Category, Region, Revenue, Cost, Profit, Quantity
+
+## PIPELINE (VERY IMPORTANT)
+1. Data Generation / Ingestion Layer
+2. Data Cleaning Layer:
+   - Handle nulls
+   - Remove duplicates
+   - Type conversion
+3. Feature Engineering:
+   - Profit Margin
+   - Monthly Growth Rate
+   - Rolling Average (7-day / 30-day)
+4. Data Storage:
+   - Save processed data into database
+
+## ANALYTICS REQUIREMENTS
+- KPI Metrics:
+  - Total Revenue
+  - Total Profit
+  - Profit Margin %
+  - Top Product
+- Time Series Analysis
+- Region-wise breakdown
+- Category performance
+
+## DASHBOARD (STREAMLIT)
+Build a professional UI:
+- Sidebar filters:
+  - Date range
+  - Region
+  - Category
+- Charts:
+  - Line chart (Revenue over time)
+  - Bar chart (Top products)
+  - Pie chart (Category distribution)
+  - Heatmap (Region vs Profit)
+- KPI cards on top
+- Responsive layout
+
+## ADVANCED FEATURES (MUST INCLUDE)
+- Caching for performance
+- Modular code structure (functions/files separation)
+- Logging (basic logging module)
+- Error handling
+- Config file support (JSON/YAML)
+
+## INSIGHTS SECTION
+Automatically generate:
+- 5–7 key business insights
+- Trend explanations
+- Actionable recommendations
+
+## OUTPUT FORMAT
+- Clean, production-quality Python code
+- Folder structure:
+    /data
+    /src
+    /app
+    /config
+- README.md with:
+    - Project overview
+    - Tech stack
+    - Setup instructions
+    - Screenshots (placeholder comments)
+- Requirements.txt
+
+## CONSTRAINTS
+- Code must be modular and scalable
+- Avoid hardcoding values
+- Use functions and classes where needed
+- Follow best practices
+
+## BONUS (IF POSSIBLE)
+- Export dashboard data to CSV
+- Add authentication (basic)
+- Dark mode UI
+
+## FINAL GOAL
+This project should look like it was built by a professional Data Analyst / AI Engineer, not a beginner.
