@@ -70,7 +70,7 @@ def main() -> None:
     sel_cats = st.sidebar.multiselect("Category", categories, default=categories)
 
     freq_label = st.sidebar.radio("Time grain", ["Daily", "Weekly", "Monthly"], index=2)
-    freq_map = {"Daily": "D", "Weekly": "W", "Monthly": "M"}
+    freq_map = {"Daily": "D", "Weekly": "W", "Monthly": "ME"}
 
     st.sidebar.divider()
     logout_button()
