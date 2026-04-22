@@ -87,14 +87,14 @@ def main() -> None:
     # ---------- KPIs ----------
     k = analytics.kpis(fdf)
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Total Revenue", f"${k['total_revenue']:,.0f}")
-    c2.metric("Total Profit", f"${k['total_profit']:,.0f}")
+    c1.metric("Total Revenue", f"₹{k['total_revenue']:,.0f}")
+    c2.metric("Total Profit", f"₹{k['total_profit']:,.0f}")
     c3.metric("Profit Margin", f"{k['profit_margin']:.1f}%")
     c4.metric("Top Product", k["top_product"])
 
     c5, c6, c7, c8 = st.columns(4)
     c5.metric("Orders", f"{k['total_orders']:,}")
-    c6.metric("Avg Order Value", f"${k['avg_order_value']:,.2f}")
+    c6.metric("Avg Order Value", f"₹{k['avg_order_value']:,.2f}")
     c7.metric("Unique Customers", f"{k['unique_customers']:,}")
     c8.metric("Rows in DB", f"{len(df):,}")
 

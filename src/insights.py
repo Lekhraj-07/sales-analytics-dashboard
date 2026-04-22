@@ -5,11 +5,13 @@ import pandas as pd
 
 
 def _fmt_money(x: float) -> str:
-    if abs(x) >= 1_000_000:
-        return f"${x/1_000_000:.2f}M"
+    if abs(x) >= 1_00_00_000:
+        return f"₹{x/1_00_00_000:.2f} Cr"
+    if abs(x) >= 1_00_000:
+        return f"₹{x/1_00_000:.2f} L"
     if abs(x) >= 1_000:
-        return f"${x/1_000:.1f}K"
-    return f"${x:,.0f}"
+        return f"₹{x/1_000:.1f}K"
+    return f"₹{x:,.0f}"
 
 
 def generate_insights(df: pd.DataFrame) -> List[dict]:

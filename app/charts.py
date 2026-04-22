@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 def line_revenue(df_ts: pd.DataFrame) -> go.Figure:
     fig = px.line(df_ts, x="Date", y=["Revenue", "Profit"], markers=True,
-                  labels={"value": "USD", "variable": "Metric"})
+                  labels={"value": "INR (₹)", "variable": "Metric"})
     fig.update_layout(title="Revenue & Profit Over Time", hovermode="x unified",
                       legend_title_text="")
     return fig
